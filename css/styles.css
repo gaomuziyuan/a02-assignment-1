@@ -45,25 +45,32 @@ nav>ul a {
 	border-radius: 0.375rem;
 }
 /*main*/
+main>section h2 {
+	width: 23rem;
+}
 main>section:first-child {
-	background: url(../images/white-linear-angled-architecture.jpg) no-repeat center center;
+	background: url(../images/white-linear-angled-architecture.jpg) no-repeat top center;
 	background-size: 100% 100%;
 	padding: 1.25rem;
 	margin-top: 3rem;
+	height: 20rem;
 }
 main>section:nth-child(2) {
-	padding: 3rem 1rem;
+	margin: 0 auto;
+	padding: 3rem 1rem 6rem;
 }
 main>section:nth-child(2)>ul>li {
 	border: 0.0625rem solid grey;
 	margin-bottom: 1rem;
 }
-main>section:nth-child(2)>ul>li>h3 {
+main>section:nth-child(2)>ul>li>div {
 	height: 5rem;
+	background-color: grey;
+	padding: 1.5rem 1rem;
+}
+main>section:nth-child(2)>ul>li h3 {
 	color: white;
 	margin: 0 auto;
-	padding: 1.5rem 1rem;
-	background-color: grey;
 }
 main>section:nth-child(2)>ul>li>p {
 	padding: 0 1rem;
@@ -97,18 +104,21 @@ main>section:last-child a {
 		max-width: 68.75rem;
 	}
 	main>section:first-child {
-		height: 400px;
-		background-size: 100% 100%;
+		background: url(../images/white-linear-angled-architecture.jpg) no-repeat bottom center;
+		background-size: cover;
 	}
 	main>section:nth-child(2)>ul {
 		display: flex;
 		justify-content: space-between;
 	}
 	main>section:nth-child(2)>ul>li {
-		flex-basis: calc((100% - 2% * 2) / 3);
+		flex-basis: calc((100% - 2%*2) / 3);
 	}
-	main>section:nth-child(2)>ul>li:last-child>h3 {
+	main>section:nth-child(2)>ul>li:last-child>div {
 		height: 7rem;
+	}
+	main>section:nth-child(2)>ul>li:last-child h3 {
+		max-width: 16.75rem;
 	}
 	main>section:last-child>div {
 		display: flex;
@@ -130,11 +140,19 @@ main>section:last-child a {
 	.container {
 		margin: 0 auto;
 	}
+	main>section:nth-child(2)>ul>li:last-child h3 {
+		max-width: none;
+	}
+	main>section:nth-child(2)>ul>li:last-child>div {
+		height: 5rem;
+	}
 }
 
 
-
 /*footer*/
+footer {
+	margin-left: 1rem;
+}
 footer ul {
 	list-style: none;
 	display: flex;
